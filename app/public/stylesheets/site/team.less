@@ -1,0 +1,76 @@
+.team-item {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.team-item-img {
+    position: relative;
+}
+
+    .team-item-img > img {
+        width: 100%;
+    }
+
+    .team-item-img .team-item-detail {
+        background: #fff;
+        text-align: center;
+        color: #fff;
+        display: -webkit-flex;
+        display: flex;
+        height: calc(~"100% - 20px");
+        width: calc(~"100% - 20px");
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        opacity: 0;
+        visibility: hidden;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out 0s;
+        -moz-transition: all 0.5s ease-in-out 0s;
+        -webkit-transition: all 0.5s ease-in-out 0s;
+        -o-transition: all 0.5s ease-in-out 0s;
+    }
+
+.team-item:hover .team-item-detail {
+    opacity: 1;
+    visibility: visible;
+}
+
+.team-item-img .team-item-detail .team-item-detail-inner, .cent-mid-content {
+    margin: auto;
+    padding: 25px;
+}
+
+    .team-item-img .team-item-detail .team-item-detail-inner .social {
+        margin: 5px 0px 0px 0px;
+        padding: 0px;
+        color: #social;
+    }
+
+        .team-item-img .team-item-detail .team-item-detail-inner .social li {
+            list-style: none;
+            display: inline-block;
+            margin: 0px 5px;
+        }
+
+            .team-item-img .team-item-detail .team-item-detail-inner .social li a {
+                color: #333;
+                font-size: 16px;
+            }
+
+                .team-item-img .team-item-detail .team-item-detail-inner .social li a:hover {
+                    color: #c7a674;
+                }
+
+.team-item-info {
+    padding-top: 15px;
+    text-align: center;
+}
+
+    .team-item-info h5, .team-item-info h6 {
+        margin-bottom: 5px;
+    }
+
+    .team-item-info p {
+        margin-bottom: 0px;
+    }

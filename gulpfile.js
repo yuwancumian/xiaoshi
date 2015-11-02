@@ -13,9 +13,7 @@ var uglify = require('gulp-uglify');
 
 gulp.task('webserver', function() {
   connect.server({
-    livereload: true,
-		root: 'dist'
-		//host: 'ajia.dev'
+		root: 'dist'//host: 'ajia.dev'
   });
 });
 
@@ -87,7 +85,7 @@ gulp.task('assets',function(){
 });
 
 gulp.task('img',function(){
-	gulp.src('app/public/images/*.*')
+	gulp.src(['app/public/images/*.*'])
 	.pipe(gulp.dest('dist/content/images'));
 });
 
