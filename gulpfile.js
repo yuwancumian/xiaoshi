@@ -17,6 +17,7 @@ gulp.task('webserver', function() {
   });
 });
 
+
 /*
 gulp.task('livereload', function() {
   gulp.src(['html/*.html', 'html/css/*.css'])
@@ -46,6 +47,13 @@ gulp.task('less',function(){
 		.pipe(gulp.dest('dist/content/css/'));
 		// .pipe(rename('main.min.css'))
 		// .pipe(gulp.dest('html/content/css'))
+});
+
+gulp.task('hackie',function(){
+    gulp.src('app/public/stylesheets/hackie.less')
+        .pipe(less())
+        .pipe(minifyCss())
+        .pipe(gulp.dest('dist/content/css/'));
 });
 
 gulp.task('js',function(){
@@ -92,8 +100,9 @@ gulp.task('img',function(){
 
 gulp.task('watch', function() {
   gulp.watch('app/views/*.html', ['html']);
-  gulp.watch('app/public/stylesheets/*.less', ['less']);
+  gulp.watch('app/public/stylesheets/site.less', ['less']);
   gulp.watch('app/public/stylesheets/site/*.less', ['less']);
+  gulp.watch('app/public/stylesheets/site/hackie.less', ['hackie']);
   gulp.watch('app/less/roots/*.less', ['less']);
   gulp.watch('app/less/lsf/*.less', ['less']);
   gulp.watch('app/public/javascripts/*.js', ['js']);
@@ -102,4 +111,4 @@ gulp.task('watch', function() {
 
 
 gulp.task('style',['less','css']);
-gulp.task('default', ['html', 'less','js', 'dp','assets','img', 'webserver', 'watch']);
+gulp.task('default', ['html', 'less','hackie','js', 'dp','assets','img', 'webserver', 'watch']);
