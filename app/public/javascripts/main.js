@@ -41,77 +41,77 @@ $(function() {
         $(".parallax").hasClass("parallax-background2") && a.css("background-position", "left " + -d + "px");
     }
 
-    function i() {
-        $(".intro-text-slider").owlCarousel({
-            slideSpeed: 400,
-            singleItem: !0,
-            autoHeight: !1,
-            navigation: !0,
-            pagination: !0,
-            navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ],
-            responsive: !0
-        }), $(".team-carousel").owlCarousel({
-            autoPlay: !1,
-            stopOnHover: !0,
-            items: 4,
-            itemsDesktop: [ 1170, 3 ],
-            itemsDesktopSmall: [ 1e3, 2 ],
-            itemsTabletSmall: [ 768, 1 ],
-            itemsMobile: [ 480, 1 ],
-            pagination: !1,
-            navigation: !1,
-            navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ]
-        }), $(".testimonial-carousel").owlCarousel({
-            autoPlay: !0,
-            autoHeight: !0,
-            stopOnHover: !0,
-            singleItem: !0,
-            slideSpeed: 350,
-            pagination: !0,
-            navigation: !1,
-            navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ]
-        }), $(".content-carousel").owlCarousel({
-            autoPlay: !0,
-            autoHeight: !0,
-            stopOnHover: !0,
-            singleItem: !0,
-            slideSpeed: 500,
-            pagination: !1,
-            navigation: !0,
-            navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ],
-            responsive: !0
-        }), $(".client-carousel").owlCarousel({
-            autoPlay: 2500,
-            stopOnHover: !0,
-            items: 6,
-            itemsDesktop: [ 1170, 5 ],
-            itemsDesktopSmall: [ 1024, 4 ],
-            itemsTabletSmall: [ 768, 3 ],
-            itemsMobile: [ 480, 2 ],
-            pagination: !1,
-            navigation: !1,
-            navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ]
-        }), $(".image-carousel").owlCarousel({
-            navigation: !0,
-            pagination: !0,
-            slideSpeed: 350,
-            paginationSpeed: 400,
-            singleItem: !0,
-            navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ],
-            autoPlay: !1,
-            autoHeight: !0,
-            responsive: !0
-        });
-    }
+    // function i() {
+    //     $(".intro-text-slider").owlCarousel({
+    //         slideSpeed: 400,
+    //         singleItem: !0,
+    //         autoHeight: !1,
+    //         navigation: !0,
+    //         pagination: !0,
+    //         navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ],
+    //         responsive: !0
+    //     }), $(".team-carousel").owlCarousel({
+    //         autoPlay: !1,
+    //         stopOnHover: !0,
+    //         items: 4,
+    //         itemsDesktop: [ 1170, 3 ],
+    //         itemsDesktopSmall: [ 1e3, 2 ],
+    //         itemsTabletSmall: [ 768, 1 ],
+    //         itemsMobile: [ 480, 1 ],
+    //         pagination: !1,
+    //         navigation: !1,
+    //         navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ]
+    //     }), $(".testimonial-carousel").owlCarousel({
+    //         autoPlay: !0,
+    //         autoHeight: !0,
+    //         stopOnHover: !0,
+    //         singleItem: !0,
+    //         slideSpeed: 350,
+    //         pagination: !0,
+    //         navigation: !1,
+    //         navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ]
+    //     }), $(".content-carousel").owlCarousel({
+    //         autoPlay: !0,
+    //         autoHeight: !0,
+    //         stopOnHover: !0,
+    //         singleItem: !0,
+    //         slideSpeed: 500,
+    //         pagination: !1,
+    //         navigation: !0,
+    //         navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ],
+    //         responsive: !0
+    //     }), $(".client-carousel").owlCarousel({
+    //         autoPlay: 2500,
+    //         stopOnHover: !0,
+    //         items: 6,
+    //         itemsDesktop: [ 1170, 5 ],
+    //         itemsDesktopSmall: [ 1024, 4 ],
+    //         itemsTabletSmall: [ 768, 3 ],
+    //         itemsMobile: [ 480, 2 ],
+    //         pagination: !1,
+    //         navigation: !1,
+    //         navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ]
+    //     }), $(".image-carousel").owlCarousel({
+    //         navigation: !0,
+    //         pagination: !0,
+    //         slideSpeed: 350,
+    //         paginationSpeed: 400,
+    //         singleItem: !0,
+    //         navigationText: [ "<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>" ],
+    //         autoPlay: !1,
+    //         autoHeight: !0,
+    //         responsive: !0
+    //     });
+    // }
 
     $(document).ready(function() {
-        a(), b(), c(), d(), i();
+        a(), b(), c(), d();
     }), $(window).load(function() {
         b(),  $("#preloader").fadeOut("slow", function() {
             $(this).remove();
         });
     }), $(window).resize(function() {
-        b(), c(), d(), i();
+        b(), c(), d();
     }), $(window).scroll(function() {
         a(), c();
     });
