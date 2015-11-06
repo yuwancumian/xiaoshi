@@ -4,8 +4,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-@import "site/fontAwesome_icon_font.css";
-@import "site/linea_icon_font.css";
+@import "site/font-awesome.css";
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6768,6 +6767,7 @@ button.close {
 }
 body {
   background: #fff;
+  font-family: "MicroSoft YaHei", Helvetica, STHeiTi, sans-serif;
 }
 h1 {
   color: red;
@@ -8114,6 +8114,8 @@ dl {
   position: absolute;
   top: 10px;
   left: 10px;
+  right: 10px;
+  bottom: 10px;
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
@@ -8208,7 +8210,9 @@ dl {
   width: calc(100% - 20px);
   left: 10px;
   top: 10px;
-  padding: 20px;
+  right: 10px;
+  bottom: 10px;
+  padding: 0px;
   position: absolute;
   transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
@@ -8246,36 +8250,24 @@ dl {
 .portfolio-box .portfolio-caption .portfolio-caption-tb-cell {
   display: table-cell;
   vertical-align: middle;
-  padding: 30px;
+  padding: 15px;
   color: #333;
   text-align: center;
 }
 .portfolio-box .portfolio-caption p {
+  height: 60px;
+  overflow: hidden;
   margin-bottom: 20px;
 }
-ul.portfolio-btn-wraper,
+p.portfolio-btn-wraper,
 .portfolio-btn-wraper {
   list-style: none;
   padding: 0px;
   margin-top: 5px;
 }
-ul.portfolio-btn-wraper li {
-  display: inline-block;
-  margin: 0px 0px;
-}
-ul.portfolio-btn-wraper .btn {
-  display: inline-block;
-  height: 32px !important;
-  width: 32px !important;
-  line-height: 28px !important;
-  font-size: 14px;
-  padding: 0px !important;
-  text-align: center;
-}
-ul.portfolio-btn-wraper .btn i,
-.portfolio-btn-wraper .btn i {
-  margin-left: 0px;
-  margin-right: 0px;
+p.portfolio-btn-wraper img {
+  width: 120px;
+  height: 60px;
 }
 /* Portfolio Filter */
 .portfolio-filter {
@@ -8333,6 +8325,19 @@ ul.portfolio-btn-wraper .btn i,
 .footer .social li:hover a {
   border-color: #c7a674;
   color: #c7a674;
+}
+#wrapper {
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+#wrapper #wrapper_header {
+  height: 32px;
+  background: #666;
 }
 /* 
  * 	Core Owl Carousel CSS File

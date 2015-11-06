@@ -17,7 +17,6 @@ $(function() {
     }
     function b() {
         var a = $(window).height();
-        console.log(a);
         $(window).width() < 480 ? $("#intro").css("height", a) : $("#intro").css({
             height: a,
             "min-height": "500px"

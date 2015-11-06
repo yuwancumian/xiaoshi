@@ -3,6 +3,7 @@
 /spm_modules
 /dist
 .gist
+*.swp
 *.sublime-project
 *.sublime-workspace
 npm-debug.log
