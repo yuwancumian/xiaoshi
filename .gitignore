@@ -1,7 +1,6 @@
 /node_modules/
 /bower_components/
 /spm_modules
-/dist
 .gist
 *.swp
 *.sublime-project
