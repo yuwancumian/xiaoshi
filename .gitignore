@@ -2,6 +2,9 @@
 /bower_components/
 /spm_modules
 .gist
+/design/
+/dist/
+/dist.zip
 *.swp
 *.sublime-project
 *.sublime-workspace

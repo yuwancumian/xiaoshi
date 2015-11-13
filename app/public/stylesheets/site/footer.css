@@ -1,0 +1,35 @@
+#footer {
+  padding-bottom: 32px;
+  background: #fff;
+}
+#footer .col-sm-4 i {
+  border-radius: 50%;
+  color: #333;
+  height: 35px;
+  width: 35px;
+  line-height: 35px;
+  font-size: 20px;
+  margin-bottom: 16px;
+  display: inline-block;
+}
+#footer .col-sm-4 div {
+  color: #333;
+}
+#footer .footer-logo {
+  float: left;
+  display: block;
+  clear: both;
+  width: 100%;
+}
+#footer .footer-logo a {
+  display: block;
+  margin: auto;
+}
+#copyright {
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  background: #000;
+  color: #fff;
+  text-align: center;
+}
