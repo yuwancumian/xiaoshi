@@ -1,6 +1,6 @@
 #footer {
-  padding-bottom: 32px;
-  background: #fff;
+  padding-bottom: 81px;
+  color: #fff;
 }
 #footer .col-sm-4 i {
   border-radius: 50%;
@@ -15,6 +15,12 @@
 #footer .col-sm-4 div {
   color: #333;
 }
+#footer .col-sm-3 a {
+  color: #c7a674;
+}
+#footer .text-center {
+  font-size: 16px;
+}
 #footer .footer-logo {
   float: left;
   display: block;
@@ -24,6 +30,10 @@
 #footer .footer-logo a {
   display: block;
   margin: auto;
+}
+#footer .foot-text {
+  padding: 36px 0  81px;
+  line-height: 32px;
 }
 #copyright {
   width: 100%;
